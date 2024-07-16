@@ -1,7 +1,60 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+            <title>ImThatBlueWolf's Website!</title>
+            <link rel="icon" type="image/x-icon" href="favicon.ico">
+            <link href="css/tailwind.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/all.min.css">
+            <link rel="stylesheet" href="css/animate.min.css">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="font-roboto bg-gray-900 text-gray-300 relative" style="overflow: auto;">
+         
+            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);"></div>
+            <button id="sidebar-toggle" class="menu-btn p-2" style="display: none;">☰</button>
+            <div id="overlay" class="overlay" style="display: none;"></div>
+            <div class="sidebar" style="transform: translateX(-100%);">
+                <ul class="space-y-2">
+                    <li class="tab cursor-pointer hover:text-gray-300">
+                        <a href="channel.html">My YouTube channel!</a>
+                    </li>
+                    <li class="tab cursor-pointer hover:text-gray-300">
+                        <a href="index2.html">2nd page placeholder</a>
+                    </li>
+                </ul>
+            </div>
+            <header class="header" style="display: flex;">
+                <div class="logo">Uwe Project</div>
+                <nav class="top-menu">
+                    <a href="channel.html" class="menu-item">My YouTube channel!</a>
+                    <a href="index2.html" class="menu-item">2nd page placeholder</a>
+                    <div class="dropdown-container">
+                        <button class="dropdown-toggle">
+                            Other Options
+                            <span class="dropdown-arrow">▾</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html">placeholder option</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        
+        
+            <section class="bg-cover bg-center h-screen relative">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-8 z-10 landing-page">
+                    <h2 id="WTN" class="text-white text-6xl font-semibold animate__animated animate__fadeInUp animate__duration-700">Welcome to my website!</h2>
+                    <div class="content-container">
+                        <p class="text-gray-300 max-w-lg animate__animated animate__fadeIn animate__duration-700">Step back, relax and dive into a new world with lots of tracks, projects and more from yours truly! Currently this page is in the works but hey! It's not so bad once you get the hand of Javascript and CSS!</p>
+                        <a href="more.html" class="discord-button">
+                            <span class="text">See more!</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <script src="index.js"></script>
+        
+        
+        </body>
+    </html>
